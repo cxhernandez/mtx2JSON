@@ -33,8 +33,8 @@ def parse_cmdln():
     parser.add_option('-t','--transition_matrix',dest='t',type='string')
     parser.add_option('-c','--cut_off',dest='c',type='float',default=0.0)
     parser.add_option('-n','--n_paths',dest='n',type='int',default=5)
-    parser.add_option('-s','--sources',dest='sources',type='string',default=None)
-    parser.add_option('-e','--sinks',dest='sinks',type='string',default=None)
+    parser.add_option('-s','--sources',dest='sources',type='string')
+    parser.add_option('-e','--sinks',dest='sinks',type='string')
     (options, args) = parser.parse_args()
     if options.m not in modes:
         parser.error('Given mode is not recognized')
