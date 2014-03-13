@@ -51,6 +51,6 @@ if __name__=="__main__":
     if options.m is 'graph':
         print tprob_to_json(tprob,options.c)
     else:
-        sources=np.loadtxt(options.sources) 
-        sinks=np.loadtxt(options.sinks)    
+        sources=np.loadtxt(options.sources,dtype=int)
+        sinks=np.loadtxt(options.sinks,dtype=int)
         print tp_to_json(tprob,options.n,sources,sinks)
