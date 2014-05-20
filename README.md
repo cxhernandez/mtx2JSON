@@ -7,7 +7,7 @@ Convert MSM adjacency matrix into a JSON-formatted graph
 How to use
 -----------
 
-If you want to simply turn your adjacency matrix into a JSON graph:
+If you want to simply turn your sparse adjacency matrix into a JSON graph:
 
 ```
 python mtx2JSON -m graph -t [FILE_PATH_TO_TRANSITION_MATRIX] -c [CUT_OFF_VALUE]
